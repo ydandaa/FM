@@ -1,0 +1,83 @@
+  li{
+  	list-style-type: none;
+  }
+  a{
+  	text-decoration: none;
+  }
+  #fm-section{
+  	width: 900px;
+    height: 146px;
+    margin: 0 auto;
+    border: 1px solid black;
+  }
+  #logo{
+  	width: 335px;
+    padding-bottom: 38px;
+    overflow: hidden;
+    margin-top: 49px;
+    float: left;
+    border: 1px solid black;
+  }
+  #user_info{
+  	width: 561px;
+  	height: 30px;
+  	float: left;
+    border: 1px solid black;
+  }
+  .none{
+  	width: 559px;
+  	height: 30px;
+    border: 1px solid black;
+  }
+  #inNone{
+  	width: 455px;
+  	height: 30px;
+  	margin-left: 102px;
+    border: 1px solid black;
+  }
+  #profile{
+  	width: 196px;
+  	height: 17px;
+  	float: left;
+    border: 1px solid black;
+  }
+  #user-name{
+  	list-style-type: none;
+    font-size: 13px;
+  }
+  #user-name a{
+  	color: #999;
+  }
+  #user-play{
+  	width: 176px;
+  	height: 17px;
+  	float: left;
+    border: 1px solid black;
+  }
+  #user-play li{
+    float: left;
+    font-size: 13px;
+    margin-right: 6px;
+  }
+  #user-play a{
+  	color: #999;
+  }
+  #user-play a:hover{
+  	color: #666;
+  }
+  #pro-promo{
+  	width: 77px;
+  	height: 17px;
+  	float: left;
+    border: 1px solid black;
+  }
+  #pro-promo li{
+  	font-size: 13px;
+  	float: left;
+  }
+  #pro-promo a{
+  	color: #999;
+  }
+  #pro-promo a:hover{
+  	color: #666;
+  }
