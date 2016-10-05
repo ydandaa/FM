@@ -198,7 +198,6 @@
   #fm-side-main{
   	width: 674px;
   	height: 1332px;
-  	border: 1px solid black;
   }
   .fm-show-off{
   	background: #eff5f2;
@@ -211,7 +210,6 @@
   	width: 550px;
   	height: 48px;
   	margin: 0 auto;
-  	border: 1px solid black;
   }
   .fm-side-list li{
   	float: left;
@@ -230,7 +228,6 @@
   	height: 930px;
   	margin: 0 auto;
   	margin-top: 32px;
-  	border: 1px solid black;
   }
   .title{
   	margin-top: 19px;
@@ -241,7 +238,6 @@
   .clearFix{
   	width: 554px;
   	height: 350px;
-  	border: 1px solid black;
   }
   .clearFix li{
     float: left;
@@ -291,4 +287,30 @@
   }
   .meta a:hover{
   	color: #58c299;
+  }
+  .last{
+  	width: 554px;
+  	height: 70px;
+  }
+  .fm-ctrline{
+  	position: absolute;
+    left: 0;
+    top: 0;
+    height: 666px;
+    width: 26px;
+    z-index: 50;
+    box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.1);
+    border: 1px solid black;
+  }
+  #fm-sidebar-ctrl{
+  	width: 16px;
+    height: 85px;
+    position: absolute;
+    top: 312px;
+    left: 8px;
+    border: 1px solid black;
+  }
+  #click1{
+  	width: 16px;
+    height: 85px;
   }
