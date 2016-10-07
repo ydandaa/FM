@@ -31,6 +31,7 @@
      var gequ = document.getElementById('gequ');
      var nian = document.getElementById('nian');
      var huanGe = document.getElementById('huanGe');
+     var wangfei = document.getElementById('wangfei');
      if (aud.paused) {
           aud.play(); 
      } else {
@@ -235,6 +236,7 @@
      }
      huanGe.onclick = function () {
      	aud.src = 'music/王菲 - 致青春.mp3';
+     	wangfei.src = 'pic/zhiqingchun.jpg';
      	gequ.innerHTML = '<致我们终将逝去的青春电影主题曲>';
      	nian.innerHTML = '致青春';
      	if (aud.paused) {
