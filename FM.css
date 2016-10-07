@@ -8,7 +8,6 @@
   	width: 900px;
     height: 146px;
     margin: 0 auto;
-    border: 1px solid black;
   }
   #logo{
   	width: 335px;
@@ -77,10 +76,9 @@
   #ch-list-container{
   	width: 100%;
   	height: 765px;
-    border: 1px solid black;
   }
   .ch-list{
-  	width: 100%px;
+  	width: 100%;
     height: 300px;
     background-color: #E1E8E5;
   }
@@ -109,7 +107,45 @@
   	height: 760px;
   	float: left;
   	margin-left: 215px;
-  	border: 1px solid black;
+  }
+  .ch-list-wrapper{
+  	width: 255px;
+  	height: 690px;
+    padding: 33px 28px;
+  }
+  .channel{
+  	font-size: 13px;
+    width: 220px;
+    height: 38px;
+    color: #333;
+    margin-bottom: 18px;
+    background-color: #D4DED9;
+  }
+  .chl_name{
+  	color: #333;
+    position: relative;
+    top: 12px;
+    left: 25px;
+  }
+  .white{
+  	 background-color: white;
+  }
+  .line{
+    height: 0;
+    border-bottom: 1px solid #999;
+    width: 154px;
+    position: relative;
+    bottom: 8px;
+    left: 65px;
+    margin-right: 7px;
+  }
+  .chl-section{
+  	height: 317px;
+  	width: 220px;
+    margin: 30px 0;
+  }
+  .chl-section li:hover{
+      background-color: #c4cfc9;
   }
   #phone{
   	width: 450px;
@@ -254,8 +290,7 @@
     cursor: pointer;
   }
   .cover{
-  	height: 45px;
-    width: 45px;
+  	border-radius: 45px;
   }
   .cont{
   	margin-top: 3px;

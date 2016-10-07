@@ -19,6 +19,10 @@
      var ssIntro4 = document.getElementById('ss-intro4');
      var ssIntro5 = document.getElementById('ss-intro5');
      var ssIntro6 = document.getElementById('ss-intro6');
+     var personal = document.getElementById('personal');
+     var red = document.getElementById('red');
+     var pick = document.getElementById('pick');
+     var meng = document.getElementById('meng');
      linsten.onmouseover = function () {
      	homepage.src = 'pic/white.png';
      	song.style.color = 'white';
@@ -146,5 +150,29 @@
      }
      nav6.onmouseout = function () {
      	 zidong = window.setInterval(qieHuan, 2000);
+     }
+     personal.onmouseover = function () {
+     	personal.style.background = '#c4cfc9';
+     }
+     personal.onmouseout = function () {
+     	personal.style.background = '#D4DED9';
+     }
+     red.onmouseover = function () {
+     	red.style.background = '#c4cfc9';
+     }
+     red.onmouseout = function () {
+     	red.style.background = '#D4DED9';
+     }
+     pick.onmouseover = function () {
+     	pick.style.background = '#c4cfc9';
+     }
+     pick.onmouseout = function () {
+     	pick.style.background = '#D4DED9';
+     }
+     meng.onmouseover = function () {
+     	meng.style.background = '#c4cfc9';
+     }
+     meng.onmouseout = function () {
+     	meng.style.background = '#D4DED9';
      }
 }(window))
