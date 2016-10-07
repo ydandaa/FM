@@ -233,4 +233,15 @@
           start.style.display = 'none';
           return false;
      }
+     huanGe.onclick = function () {
+     	aud.src = 'music/王菲 - 致青春.mp3';
+     	gequ.innerHTML = '<致我们终将逝去的青春电影主题曲>';
+     	nian.innerHTML = '致青春';
+     	if (aud.paused) {
+          aud.play(); 
+        } else {
+          aud.pause();
+          }
+     	return false;
+     }
 }(window))
