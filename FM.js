@@ -23,6 +23,38 @@
      var red = document.getElementById('red');
      var pick = document.getElementById('pick');
      var meng = document.getElementById('meng');
+     var aud = document.getElementById('aud');
+     var time = document.getElementById('time');
+     var xin = document.getElementById('xin');
+     var start = document.getElementById('start');
+     var btnStop = document.getElementById('btnStop');
+     var gequ = document.getElementById('gequ');
+     var nian = document.getElementById('nian');
+     var huanGe = document.getElementById('huanGe');
+     if (aud.paused) {
+          aud.play(); 
+     } else {
+          aud.pause();
+       }
+      aud.ontimeupdate = function () {
+      	 var minutes = Math.floor(aud.currentTime/60)+':';
+    	    var second = parseInt(aud.currentTime%60);
+    	    function c() {
+                 if(second<10){
+           	        second = '0'+parseInt(aud.currentTime%60);
+           	        return second;
+                 } else {
+           	        second = parseInt(aud.currentTime%60);
+           	        return second;
+                   }
+    	    }
+    	 time.innerHTML = minutes+c(second);
+      	 var sum = parseInt(aud.duration);
+         var curr = parseInt(aud.currentTime);
+         var inJinDu = document.getElementById('inJinDu');
+         inJinDu.style.width = (curr/sum)*247+'px'; 
+      }
+      
      linsten.onmouseover = function () {
      	homepage.src = 'pic/white.png';
      	song.style.color = 'white';
@@ -174,5 +206,31 @@
      }
      meng.onmouseout = function () {
      	meng.style.background = '#D4DED9';
+     }
+     xin.onclick = function () {
+     	if (xin.src.match('pic/xin.png')) {
+           xin.src = 'pic/hong.png';
+           return false;
+     	} else {
+           xin.src = 'pic/xin.png';
+     	 }
+     }
+     btnStop.onclick = function () {
+     	 if (aud.paused) {
+            aud.play(); 
+         } else {
+            aud.pause();
+          }
+          start.style.display = 'block';
+          return false;
+     }
+     start.onclick = function () {
+     	 if (aud.paused) {
+            aud.play(); 
+         } else {
+            aud.pause();
+          }
+          start.style.display = 'none';
+          return false;
      }
 }(window))
