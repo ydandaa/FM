@@ -75,10 +75,8 @@
   	color: #666;
   }
   #ch-list-container{
-  	width: 900px;
+  	width: 100%;
   	height: 765px;
-  	margin:0 auto;
-  	/*overflow-x: hidden;*/
     border: 1px solid black;
   }
   .ch-list{
@@ -110,17 +108,19 @@
   	width:311px;
   	height: 760px;
   	float: left;
+  	margin-left: 215px;
   	border: 1px solid black;
   }
   #phone{
   	width: 450px;
     height: 35px;
     float: left;
-    margin-top: 190px;
+    margin-top: 202px;
     margin-left: 135px;
   }
   .send{
-  	font-size: 12pt;
+  	margin-left: 5px;
+  	font-size: 14px;
   	float: left;
   }
   .send a{
@@ -130,8 +130,8 @@
   	color: #666;
   }
   #linsten{
-  	width: 100px;
-    height: 25px;
+  	width: 97px;
+    height: 23px;
     float: right;
     border: 1px solid #58c299;
   }
@@ -139,7 +139,7 @@
   	float: left;
   }
   .song{
-  	font-size: 15px;
+  	font-size: 13px;
     margin-top: 4px;
   }
   .song a{
@@ -149,10 +149,12 @@
   	width: 70px;
   	height: 30px;
   	float: right;
-  	margin-top: 15px;
+  	position: relative;
+    top: 255px;
+    right: 213px;
   }
   #share-song{
-  	font-size: 14px;
+  	font-size: 13px;
   	color: #999;
   }
   #fm-sidebar{
@@ -163,20 +165,16 @@
     top: 0;
     left: 0;
     box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.1);
-    border: 1px solid black;
   }
   .fm-side-inner{
-  	/*overflow: hidden;*/
     width: 674px;
     background: #fff;
     z-index: 998;
-    /*border: 1px solid black;*/
   }
   .fm-side-cont{
   	width: 674px;
     height: 1501px;
     z-index: 997;
-    border: 1px solid black;
   }
   .fm-side-none{
   	width: 674px;
@@ -188,7 +186,6 @@
     margin:0 auto;
   }
   .fm-side-search{
-  	/*border: 0 none;*/
     height: 23px;
     line-height: 23px;
     width: 215px;
@@ -207,7 +204,6 @@
     height: 278px;
     overflow: hidden;
     margin-bottom: 44px;
-    border: 1px solid black;
   }
   .fm-side-list{
   	width: 550px;
@@ -337,7 +333,6 @@
   	width: 290px;
   	height: 276px;
   	float: left;
-  	border: 1px solid black;
   }
   .intro{
     float: right;
@@ -345,7 +340,6 @@
     height: 276px;
     padding-right: 20px;
     margin-left: 29px;
-    border: 1px solid black;
   }
   .show-pagenav{
   	list-style-type: none;
@@ -365,7 +359,49 @@
   .show-pagenav li a{
   	 color: #888;
   }
-  .show-pagenav li:hover{
+ .show-pagenav li:hover{
   	 background-color: #9DD6C5;
   }
-  
+  #ss-intros{
+  	width: 329px;
+  	height: 186px;
+  }
+  .ss-intro{
+  	width: 290px;
+  	height: 184px;
+  	padding-left: 38px;
+  }
+  .ss-intro h3{
+  	font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 21px;
+  }
+  .ss-intro a{
+  	color: #666;
+  }
+  .contant{
+  	width: 290px;
+  	height: 57px;
+  }
+  .contant p{
+  	margin: 0;
+    font-size: 12px;
+    margin-bottom: 3px;
+    color: #666;
+  }
+  .contant a{
+  	font-size: 12px;
+  }
+  .contant a:hover{
+  	color: #58c299;
+  }
+  .size{
+  	font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  .contant span{
+  	font-size: 12px;
+    color: #666;
+    margin-right: 5px;
+  }
