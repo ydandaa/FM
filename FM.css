@@ -505,3 +505,27 @@
     color: #666;
     margin-right: 5px;
   }
+  #fm-app{
+  	width: 160px;
+    height: 36px;
+    float: right;
+    display: inline;
+    margin-top: 60px;
+    margin-right: 220px;
+    background-color: #00C35A;
+    border: 1px solid black;
+  }
+  #fm-app img{
+  	margin-top: 8px;
+    margin-left: 3px;
+  }
+  #fm-app span{
+  	font-size: 14px;
+    color: white;
+    display: inline-block;
+    position: relative;
+    top: -4px;
+  }
+  #fm-app:hover{
+  	background-color: #03db67;
+  }
