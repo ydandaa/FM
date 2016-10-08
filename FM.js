@@ -32,11 +32,13 @@
      var nian = document.getElementById('nian');
      var huanGe = document.getElementById('huanGe');
      var wangfei = document.getElementById('wangfei');
+     //音乐播放
      if (aud.paused) {
           aud.play(); 
      } else {
           aud.pause();
        }
+      //显示时间
       aud.ontimeupdate = function () {
       	 var minutes = Math.floor(aud.currentTime/60)+':';
     	    var second = parseInt(aud.currentTime%60);
@@ -55,7 +57,7 @@
          var inJinDu = document.getElementById('inJinDu');
          inJinDu.style.width = (curr/sum)*247+'px'; 
       }
-      
+     //鼠标移动
      linsten.onmouseover = function () {
      	homepage.src = 'pic/white.png';
      	song.style.color = 'white';
@@ -82,6 +84,7 @@
         sidebar.style.display='block';
         return false;
      }
+     //图片切换
      var ziDong;
 	 var i = 0;
 	 var arr = ["pic/show2.jpg","pic/show3.jpg","pic/show4.jpg","pic/show5.jpg","pic/show6.jpg","pic/show1.jpg"];
@@ -208,6 +211,7 @@
      meng.onmouseout = function () {
      	meng.style.background = '#D4DED9';
      }
+     //点击收藏
      xin.onclick = function () {
      	if (xin.src.match('pic/xin.png')) {
            xin.src = 'pic/hong.png';
@@ -216,6 +220,7 @@
            xin.src = 'pic/xin.png';
      	 }
      }
+     //暂停歌曲
      btnStop.onclick = function () {
      	 if (aud.paused) {
             aud.play(); 
@@ -225,6 +230,7 @@
           start.style.display = 'block';
           return false;
      }
+     //播放歌曲
      start.onclick = function () {
      	 if (aud.paused) {
             aud.play(); 
@@ -234,6 +240,7 @@
           start.style.display = 'none';
           return false;
      }
+     //换歌
      huanGe.onclick = function () {
      	aud.src = 'music/王菲 - 致青春.mp3';
      	wangfei.src = 'pic/zhiqingchun.jpg';
